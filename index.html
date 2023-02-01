@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APP CUENTA CLARAS</title>
+    <title>APP CUENTAs CLARAS</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body>
-     <form>
+     
+    <h1>Con esta aplicacion podra usted hacer un ingreso de usuarios con lo que haya gastado cada uno y luego poder dividir equitativamente.</h1>
+   <h2>Asegurese de no dejar campos en blanco.</h2>
+    <form>
         <label for="nombre1"> Nombre:</label>
         <input type="text" id="nombre1" name="nombre1">
         <label for="monto1">Monto:</label>
@@ -21,7 +25,7 @@
       </form>
     <ul id="userList"></ul>
 
-    <button type="button" id="calculate" style="display:none"
+    <button class="calculateButton" type="button" id="calculate" style="display:none"
         onclick="calculatePromedio()">Calcular</button>
     <div id="result"></div>
 
